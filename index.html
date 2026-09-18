@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Webpage</title>
+    <title>My First Webpage</title> 
+    <link rel="icon" type="image/png" href="af762658602e73bddae386ce692c458a.jpg">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Ramazan Bulekbayev</h1>
+    <div class="header">
+    <h1 id="main-heading">Ramazan Bulekbayev</h1>
     <h2>WEB Technologies 1 (Front End)</h2>
+    </div>
+    <div class="main-content">
     <h3>About me</h3>
-    <p>I am a student in AITU, I am from KZO</p>
+    <p style="color: blueviolet;">I am a student in AITU, I am from KZO</p>
     <hr>
     <h3>My hobbies</h3>
     <ol>
@@ -26,6 +31,20 @@
     <h3>My favorite images</h3>
     <img src="af762658602e73bddae386ce692c458a.jpg" alt="Dattebayo" width="100">
     <hr>
+    <h3>CSS Positioning Demo</h3>
+        <div class="pos-container">
+            <div class="box-static">Static Position (default)</div>
+            <div class="box-relative">Relative Position (shifted)</div>
+            <div class="box-absolute">Absolute Position</div>
+        </div>
+        <hr>
+        <h3>Float and Clear Demo</h3>
+        <div class="float-container">
+            <div class="box-left">Left Box (Float Left)</div>
+            <div class="box-right">Right Box (Float Right)</div>
+            <div class="clear-box">Cleared Content (Below Float)</div>
+        </div>
+        <hr>
     <h3>Button</h3>
     <button onclick="alert('Hello!')">Click me</button>
     <hr>
@@ -54,7 +73,9 @@
         </table>
         <hr>
         <h3>My mood today</h3>
-        <p> Today I feel happy 😊 excited 😎 and motivated 🔥</p>
+        <p> Today I feel <span class="highlight">happy</span>, <span class="highlight">excited</span>, and <span class="highlight">motivated</span>.</p>
+        </div>
+        <div class="footer">
         <hr>
         <h3>Form</h3>
         <form>
@@ -63,5 +84,6 @@
             <p>Favorite color: <input type="color" name="favorite_color"></p>
             <p><input type="submit" value="Submit"></p>
         </form>
+        </div>
     </body>
 </html>
